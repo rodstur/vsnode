@@ -1,6 +1,6 @@
 import Sequelize from 'sequelize';
 import bcryp from 'bcrypt';
-import { ErrorHandler } from '../../error';
+import { ErrorHandler } from '../middlewares/error';
 
 
 class User extends Sequelize.Model {
@@ -47,6 +47,5 @@ class User extends Sequelize.Model {
     return bcryp.compare(password, this.password);
   }
 }
-
 
 export default User;

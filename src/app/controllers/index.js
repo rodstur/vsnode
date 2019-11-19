@@ -1,6 +1,6 @@
 import path from 'path';
 import models from '../models';
-import { ErrorHandler } from '../../error';
+import { ErrorHandler } from '../middlewares/error';
 
 class DefaultController {
   constructor(controllerName) {
@@ -18,7 +18,6 @@ class DefaultController {
   }
 
   async update(req, res, next) {
-    console.log(req.userId);
     return res.status(200).json();
   }
 

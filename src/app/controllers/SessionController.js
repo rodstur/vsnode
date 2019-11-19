@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import models from '../models';
-import { ErrorHandler } from '../../error';
+import { ErrorHandler } from '../middlewares/error';
 import auth from '../../config/auth';
 
 
