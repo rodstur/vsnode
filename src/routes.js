@@ -12,8 +12,11 @@ routes.post('/sessions', asyncHandler(SessionController.store));
 
 routes.use(authMiddleware);
 routes.post('/users', asyncHandler((...args) => UserController.create(...args)));
-routes.put('/users/:id', asyncHandler((...args) => UserController.update(...args)));
+routes.put('/users/:id(\\d+)', asyncHandler((...args) => UserController.update(...args)));
 routes.use(handleError);
+routes.use('*', (req, res, next) => {
+  res.status(404).json({ error: 'Resource not found' });
+});
 
 
 export default routes;

@@ -8,7 +8,8 @@ export default async (req, res, next) => {
 
   if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
 
-  const [, token] = authHeader.split(' ');
+  const token = authHeader.split(' ')[1];
+
 
   try {
     const decoded = await promisify(jwt.verify)(token, authConf.secret);

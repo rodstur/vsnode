@@ -1,0 +1,22 @@
+###
+POST  http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTc0ODU0MTc4LCJleHAiOjE1NzU0NTg5Nzh9.NEzOjvKjxWESYSUW51tXCWlA0W2c4mdzXdIWnceYO9U
+Content-Type: application/json
+
+{
+  "name": "rodson",
+  "email": "rodsonrcr4@decea.gov.br",
+  "password_plain": "123"
+}
+###
+
+PUT http://localhost:3000/users/4s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTc0ODU0MTc4LCJleHAiOjE1NzU0NTg5Nzh9.NEzOjvKjxWESYSUW51tXCWlA0W2c4mdzXdIWnceYO9U
+Content-Type: application/json
+
+{
+  "name": "rodsona",
+  "password": "12356"
+}
+
+###
