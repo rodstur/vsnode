@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/sequelize": "^4.28.6",
     "bcrypt": "^3.0.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.0.1",
